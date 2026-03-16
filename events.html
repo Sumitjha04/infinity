@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Community | Events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-events">
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-mark" aria-hidden="true"></div>
+      <p class="splash-eyebrow">Welcome to</p>
+      <h1 class="splash-title">Infinity</h1>
+      <p class="splash-subtitle">Events • Community • Moments</p>
+    </div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <header class="site-header">
+    <div class="logo">Infinity<span>Community</span></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="events.html" class="nav-link active">Events</a>
+      <a href="community.html" class="nav-link cta-link">Community</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section hero-slim">
+      <div class="section-header animate-in">
+        <p class="eyebrow">Events</p>
+        <h1>Previous highlights &amp; upcoming sessions</h1>
+        <p class="section-subtitle">
+          Explore what we have done so far and register for the next events directly on this page.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header animate-in">
+        <p class="eyebrow">Previous events</p>
+        <h2>Some of our favourite memories</h2>
+        <p class="section-subtitle">
+          Replace these sample cards with real photos and descriptions from your past events.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="event-card past animate-in delay-1">
+          <div class="event-image placeholder-img img-1"></div>
+          <div class="event-content">
+            <h3>Community Kickoff Meetup</h3>
+            <p>A casual introduction to the community with open networking and lightning talks.</p>
+            <p class="event-meta">Held on 15 Jan 2026 · 80+ attendees</p>
+          </div>
+        </article>
+
+        <article class="event-card past animate-in delay-2">
+          <div class="event-image placeholder-img img-2"></div>
+          <div class="event-content">
+            <h3>Project Showcase Night</h3>
+            <p>Members demoed the projects they have been working on, from apps to art.</p>
+            <p class="event-meta">Held on 03 Feb 2026 · 20 projects</p>
+          </div>
+        </article>
+
+        <article class="event-card past animate-in delay-3">
+          <div class="event-image placeholder-img img-3"></div>
+          <div class="event-content">
+            <h3>Hands-on Workshop Day</h3>
+            <p>A full-day, practical workshop featuring multiple tracks and mentors.</p>
+            <p class="event-meta">Held on 01 Mar 2026 · 6 sessions</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-highlight">
+      <div class="section-header animate-in">
+        <p class="eyebrow">Upcoming events</p>
+        <h2>Register directly on the site</h2>
+        <p class="section-subtitle">
+          Fill out the form below and you will be redirected to the payment page to complete your registration.
+        </p>
+      </div>
+
+      <div class="upcoming-layout">
+        <div class="upcoming-list">
+          <article class="event-card upcoming animate-in delay-1" data-event-id="hack-night">
+            <h3>Community Hack Night</h3>
+            <p>Build something small but meaningful together in one evening.</p>
+            <p class="event-meta">Date: 05 April 2026 · Time: 6:00 PM</p>
+          </article>
+
+          <article class="event-card upcoming animate-in delay-2" data-event-id="design-clinic">
+            <h3>Design Feedback Clinic</h3>
+            <p>Bring your UI, posters, or decks and get live feedback from peers.</p>
+            <p class="event-meta">Date: 19 April 2026 · Time: 4:00 PM</p>
+          </article>
+
+          <article class="event-card upcoming animate-in delay-3" data-event-id="career-circle">
+            <h3>Career Circle Meetup</h3>
+            <p>Small-group conversations about careers, learning paths, and portfolios.</p>
+            <p class="event-meta">Date: 03 May 2026 · Time: 5:00 PM</p>
+          </article>
+        </div>
+
+        <div class="registration-card animate-in delay-4">
+          <h3>Register for an event</h3>
+          <p class="hint">
+            This is a front-end only demo. Connect the “Proceed to payment” button to your real Paytm payment link.
+          </p>
+          <form id="registrationForm">
+            <label>
+              Full name
+              <input type="text" name="name" required placeholder="Enter your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              Select event
+              <select name="event" id="eventSelect" required>
+                <option value="">Choose an event</option>
+                <option value="hack-night">Community Hack Night</option>
+                <option value="design-clinic">Design Feedback Clinic</option>
+                <option value="career-circle">Career Circle Meetup</option>
+              </select>
+            </label>
+            <label>
+              Number of seats
+              <input type="number" name="seats" min="1" max="10" value="1" required />
+            </label>
+
+            <div class="inline">
+              <div>
+                <p class="label-muted">Ticket price</p>
+                <p class="price" id="ticketPrice">₹299 / seat</p>
+              </div>
+              <div>
+                <p class="label-muted">Total</p>
+                <p class="price" id="totalPrice">₹299</p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn primary full-width">Proceed to payment</button>
+          </form>
+          <p class="tiny-note">
+            Note: On submit we redirect to a demo Paytm URL. Replace that URL in `app.js` with your live Paytm link.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Infinity Community. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

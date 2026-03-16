@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Community | Join the Community</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-community">
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-mark" aria-hidden="true"></div>
+      <p class="splash-eyebrow">Welcome to</p>
+      <h1 class="splash-title">Infinity</h1>
+      <p class="splash-subtitle">Chat • Share • Belong</p>
+    </div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <header class="site-header">
+    <div class="logo">Infinity<span>Community</span></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="community.html" class="nav-link cta-link active">Community</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section hero-slim">
+      <div class="section-header animate-in">
+        <p class="eyebrow">Join the conversation</p>
+        <h1>Stay connected beyond events</h1>
+        <p class="section-subtitle">
+          We use a WhatsApp community so members can chat, ask questions, and share updates between meetups.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="community-layout">
+        <div class="community-card animate-in">
+          <h2>WhatsApp community</h2>
+          <p>
+            Tap the button below to open the official WhatsApp community group in a new tab.
+            You can use this space to:
+          </p>
+          <ul class="bullet-list">
+            <li>Ask doubts and get quick help</li>
+            <li>Receive event announcements and reminders</li>
+            <li>Share resources, wins, and opportunities</li>
+          </ul>
+          <a id="whatsappLink" href="#" target="_blank" rel="noopener" class="btn primary">
+            Open WhatsApp community
+          </a>
+          <p class="tiny-note">
+            Replace the placeholder link in `app.js` with your real WhatsApp community invite URL.
+          </p>
+        </div>
+
+        <div class="community-card ghost-card animate-in delay-2">
+          <h2>Optional: On-site chat room (demo)</h2>
+          <p class="section-subtitle">
+            This simple chat box stores messages in your browser only (no real-time server). 
+            It can be turned into a full chat app later.
+          </p>
+          <div class="chat-box">
+            <div id="chatMessages" class="chat-messages"></div>
+            <form id="chatForm" class="chat-form">
+              <input type="text" id="chatInput" placeholder="Type a message..." required />
+              <button type="submit" class="btn small">Send</button>
+            </form>
+          </div>
+          <p class="tiny-note">
+            Messages here do not leave your device. For a real multi-user chat, you will need a backend (for example using Firebase or a custom server).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Infinity Community. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
