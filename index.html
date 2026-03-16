@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Community | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-mark" aria-hidden="true"></div>
+      <p class="splash-eyebrow">Welcome to</p>
+      <h1 class="splash-title">Infinity</h1>
+      <p class="splash-subtitle">Connect • Learn • Grow</p>
+    </div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <header class="site-header">
+    <div class="logo">Infinity<span>Community</span></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="community.html" class="nav-link cta-link">Community</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-bg-orbit"></div>
+      <div class="hero-content">
+        <p class="eyebrow animate-in">Welcome to Infinity</p>
+        <h1 class="animate-in delay-1">
+          Where people <span class="accent">connect</span>, learn, and grow without limits.
+        </h1>
+        <p class="hero-subtitle animate-in delay-2">
+          Join a vibrant group of learners, builders, and creators under the Infinity banner.
+          Attend meetups, share ideas, and be part of something bigger.
+        </p>
+        <div class="hero-actions animate-in delay-3">
+          <a href="events.html" class="btn primary">View Events</a>
+          <a href="community.html" class="btn ghost">Join Community</a>
+        </div>
+        <div class="hero-metadata animate-in delay-4">
+          <div class="meta-pill">
+            <span class="meta-label">Members</span>
+            <span class="meta-value">500+ and growing</span>
+          </div>
+          <div class="meta-pill">
+            <span class="meta-label">Events hosted</span>
+            <span class="meta-value">40+ meetups &amp; workshops</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual animate-in delay-2">
+        <div class="planet"></div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="floating-card card-1">
+          <span>🤝</span>
+          <p>Network with peers</p>
+        </div>
+        <div class="floating-card card-2">
+          <span>🎤</span>
+          <p>Expert talks</p>
+        </div>
+        <div class="floating-card card-3">
+          <span>🚀</span>
+          <p>Project collabs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-header animate-in">
+        <p class="eyebrow">About us</p>
+        <h2>Who is behind Infinity?</h2>
+        <p class="section-subtitle">
+          A small, dedicated team focused on building an inclusive and practical learning space.
+        </p>
+      </div>
+      <div class="grid-2">
+        <div class="about-text animate-in delay-1">
+          <p>
+            Infinity brings together students, professionals, and enthusiasts from different domains.
+            We host meetups, hack sessions, panel talks, and casual hangouts designed to help you
+            grow your skills and your network.
+          </p>
+          <p>
+            Whether you are just starting out or already experienced, you will find people to learn from,
+            collaborate with, and get inspired by inside the Infinity community.
+          </p>
+        </div>
+        <div class="team-grid animate-in delay-2">
+          <article class="team-card">
+            <div class="avatar avatar-1"></div>
+            <h3>Community Lead</h3>
+            <p>Curates events, mentors members, and keeps the vision clear.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar avatar-2"></div>
+            <h3>Events Manager</h3>
+            <p>Builds our event calendar and coordinates with speakers.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar avatar-3"></div>
+            <h3>Design & Media</h3>
+            <p>Handles branding, visuals, and event coverage.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar avatar-4"></div>
+            <h3>Community Mods</h3>
+            <p>Keeps conversations friendly, helpful, and on-topic.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-highlight">
+      <div class="section-header animate-in">
+        <p class="eyebrow">Why join?</p>
+        <h2>Built for real connections, not just numbers.</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card animate-in delay-1">
+          <h3>Practical sessions</h3>
+          <p>Hands-on events that focus on doing, not just listening.</p>
+        </div>
+        <div class="benefit-card animate-in delay-2">
+          <h3>Supportive peers</h3>
+          <p>A safe space to ask questions and share your journey.</p>
+        </div>
+        <div class="benefit-card animate-in delay-3">
+          <h3>Opportunities</h3>
+          <p>Discover collaborators, mentors, and potential partners.</p>
+        </div>
+      </div>
+      <div class="centered mt-lg animate-in delay-4">
+        <a href="events.html" class="btn primary">See upcoming events</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Infinity Community. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
